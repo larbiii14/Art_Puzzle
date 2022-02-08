@@ -333,7 +333,6 @@ class _PuzzleTile extends StatelessWidget {
 class PuzzleMenu extends StatelessWidget {
   /// {@macro puzzle_menu}
   const PuzzleMenu({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     final themes = context.select((ThemeBloc bloc) => bloc.state.themes);

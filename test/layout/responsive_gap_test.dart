@@ -9,9 +9,9 @@ import '../helpers/helpers.dart';
 
 void main() {
   group('ResponsiveGap', () {
-    const smallGap = 10.0;
-    const mediumGap = 20.0;
-    const largeGap = 30.0;
+    const smallGap = 12.0;
+    const mediumGap = 24.0;
+    const largeGap = 36.0;
 
     testWidgets('renders a large gap on a large display', (tester) async {
       tester.setLargeDisplaySize();

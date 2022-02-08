@@ -24,7 +24,7 @@ class SimplePuzzleLayoutDelegate extends PuzzleLayoutDelegate {
       small: (_, child) => child!,
       medium: (_, child) => child!,
       large: (_, child) => Padding(
-        padding: const EdgeInsets.only(left: 50, right: 32),
+        padding: const EdgeInsets.only(left: 8, right: 8),
         child: child,
       ),
       child: (_) => SimpleStartSection(state: state),
@@ -67,8 +67,8 @@ class SimplePuzzleLayoutDelegate extends PuzzleLayoutDelegate {
           ),
         ),
         medium: (_, __) => SizedBox(
-          width: 380.44,
-          height: 214,
+          width: 300.44,
+          height: 200,
           child: Image.asset(
             'assets/images/simple_art_medium.png',
             key: const Key('simple_puzzle_dash_medium'),
@@ -77,8 +77,8 @@ class SimplePuzzleLayoutDelegate extends PuzzleLayoutDelegate {
         large: (_, __) => Padding(
           padding: const EdgeInsets.only(bottom: 53),
           child: SizedBox(
-            width: 568.99,
-            height: 320,
+            width: 400.99,
+            height: 250.90,
             child: Image.asset(
               'assets/images/simple_art_large.png',
               key: const Key('simple_puzzle_dash_large'),
@@ -181,6 +181,7 @@ class SimpleStartSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var screenSize = MediaQuery.of(context).size;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -201,10 +202,55 @@ class SimpleStartSection extends StatelessWidget {
           medium: 16,
           large: 32,
         ),
-        NumberOfMovesAndTilesLeft(
-          key: numberOfMovesAndTilesLeftKey,
-          numberOfMoves: state.numberOfMoves,
-          numberOfTilesLeft: state.numberOfTilesLeft,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Center(
+              child: (screenSize.width < 600)
+                  ? Container(
+                      width: screenSize.width * .65,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: const Color(0xFFEADBB4),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.black45,
+                            blurRadius: 10,
+                            spreadRadius: 1,
+                            offset: Offset(0, 10),
+                          ),
+                        ],
+                      ),
+                      child: NumberOfMovesAndTilesLeft(
+                        key: numberOfMovesAndTilesLeftKey,
+                        numberOfMoves: state.numberOfMoves,
+                        numberOfTilesLeft: state.numberOfTilesLeft,
+                      ),
+                    )
+                  : Container(
+                      width: screenSize.width * .335,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: const Color(0xFFEADBB4),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Colors.black45,
+                            blurRadius: 10,
+                            spreadRadius: 1,
+                            offset: Offset(0, 10),
+                          ),
+                        ],
+                      ),
+                      child: NumberOfMovesAndTilesLeft(
+                        key: numberOfMovesAndTilesLeftKey,
+                        numberOfMoves: state.numberOfMoves,
+                        numberOfTilesLeft: state.numberOfTilesLeft,
+                      ),
+                    ),
+            )
+          ],
         ),
         const ResponsiveGap(
           large: 32,
@@ -250,8 +296,8 @@ class SimplePuzzleTitle extends StatelessWidget {
 
 abstract class _BoardSize {
   static double small = 312;
-  static double medium = 424;
-  static double large = 472;
+  static double medium = 350;
+  static double large = 354;
 }
 
 /// {@template simple_puzzle_board}
@@ -332,7 +378,7 @@ class SimplePuzzleTile extends StatelessWidget {
         ),
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
-            Radius.circular(12),
+            Radius.circular(2),
           ),
         ),
       ).copyWith(
