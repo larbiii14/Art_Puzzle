@@ -18,7 +18,7 @@ class DashatarPuzzleLayoutDelegate extends PuzzleLayoutDelegate {
       small: (_, child) => child!,
       medium: (_, child) => child!,
       large: (_, child) => Padding(
-        padding: const EdgeInsets.only(left: 50, right: 32),
+        padding: const EdgeInsets.only(left: 30, right: 15),
         child: child,
       ),
       child: (_) => DashatarStartSection(state: state),
@@ -92,11 +92,11 @@ class DashatarPuzzleLayoutDelegate extends PuzzleLayoutDelegate {
             const ResponsiveGap(
               small: 21,
               medium: 34,
-              large: 96,
+              large: 70,
             ),
             DashatarPuzzleBoard(tiles: tiles),
             const ResponsiveGap(
-              large: 96,
+              large: 45,
             ),
           ],
         ),
