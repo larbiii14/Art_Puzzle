@@ -1,7 +1,6 @@
 {
   "projects": {
-    "default": "art-puzzle-1157",
-    "staging": "art-puzzle-1157"
+    "build": "art-puzzle-1157"
   },
   "targets": {}
 }
