@@ -1,20 +1,91 @@
+<div id="top"></div>
+
 # Art Puzzle
-
-![Photo Booth Header][logo]
-
-![coverage][coverage_badge]
-[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
-[![License: MIT][license_badge]][license_link]
 
 A Art Puzzle built for [Flutter Challenge](https://flutterhack.devpost.com/).
 
-*Built by [Very Good Ventures][very_good_ventures_link] in partnership with Google.*
+*Built by Larbi Abatorab.
 
-*Created using [Very Good CLI][very_good_cli_link].*
 
 ---
 
-## Getting Started 🚀
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/larbiii14/Art_Puzzle">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">Art_Puzzle</h3>
+
+  <p align="center">
+    project_description
+    <br />
+    <a href="https://github.com/larbiii14/Art_Puzzle"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/larbiii14/Art_Puzzle">View Demo</a>
+    ·
+    <a href="https://github.com/larbiii14/Art_Puzzle/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/larbiii14/Art_Puzzle/issues">Request Feature</a>
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://art-puzzle-1157.web.app/)
+
+ `larbiii14`, `Art_puzzle`, `l-abatorab`, `larbiii14@gmail.com`, `Art_puzzle`, `A flutter Art Puzzle `
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+### Built With
+
+* [Flutter](https://flutter.dev/)
+* [Dart](https://dart.dev/)
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
 
 To run the project either use the launch configuration in VSCode/Android Studio or use the following command:
 
@@ -22,134 +93,81 @@ To run the project either use the launch configuration in VSCode/Android Studio 
 $ flutter run -d chrome
 ```
 
----
+### Prerequisites
 
-## Running Tests 🧪
+What you'll use
+You need two pieces of software to complete this lab: the Flutter SDK and an editor.  Android Studio, but you can use your preferred editor.
 
-To run all unit and widget tests use the following command:
+You can run this Flutter App by using any of the following devices:
 
-```sh
-$ flutter test --coverage --test-randomize-ordering-seed random
-```
+A physical device (Android or iOS) connected to your computer and set to developer mode
+The iOS simulator (requires installing Xcode tools)
+The Android emulator (requires setup in Android Studio)
+A browser (Chrome is required for debugging)
+As a Windows, Linux, or macOS desktop application
 
-To view the generated coverage report you can use [lcov](https://github.com/linux-test-project/lcov).
 
-```sh
-# Generate Coverage Report
-$ genhtml coverage/lcov.info -o coverage/
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-# Open Coverage Report
-$ open coverage/index.html
-```
 
----
 
-## Working with Translations 🌐
 
-This project relies on [flutter_localizations][flutter_localizations_link] and follows the [official internationalization guide for Flutter][internationalization_link].
+See the [open issues](https://github.com/larbiii14/Art_Puzzle/issues) for a full list of proposed features (and known issues).
 
-### Adding Strings
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-1. To add a new localizable string, open the `app_en.arb` file at `lib/l10n/arb/app_en.arb`.
 
-```arb
-{
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    }
-}
-```
 
-2. Then add a new key/value and description
+<!-- CONTRIBUTING -->
+## Contributing
 
-```arb
-{
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    },
-    "helloWorld": "Hello World",
-    "@helloWorld": {
-        "description": "Hello World Text"
-    }
-}
-```
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-3. Use the new string
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-```dart
-import 'package:very_good_slide_puzzle/l10n/l10n.dart';
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-@override
-Widget build(BuildContext context) {
-  final l10n = context.l10n;
-  return Text(l10n.helloWorld);
-}
-```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Adding Supported Locales
 
-Update the `CFBundleLocalizations` array in the `Info.plist` at `ios/Runner/Info.plist` to include the new locale.
 
-```xml
-    ...
+<!-- LICENSE -->
+## License
 
-    <key>CFBundleLocalizations</key>
-	<array>
-		<string>en</string>
-		<string>es</string>
-	</array>
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-    ...
-```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Adding Translations
 
-1. For each supported locale, add a new ARB file in `lib/l10n/arb`.
 
-```
-├── l10n
-│   ├── arb
-│   │   ├── app_en.arb
-│   │   └── app_es.arb
-```
+<!-- CONTACT -->
+## Contact
 
-2. Add the translated strings to each `.arb` file:
+LARBI ABATORAB - [@larbi_abatorab](https://twitter.com/larbi_abatorab) - larbiii14@gmail.com
 
-`app_en.arb`
+Project Link: [https://github.com/larbiii14/Art_Puzzle](https://github.com/larbiii14/Art_Puzzle)
 
-```arb
-{
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    }
-}
-```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-`app_es.arb`
 
-```arb
-{
-    "@@locale": "es",
-    "counterAppBarTitle": "Contador",
-    "@counterAppBarTitle": {
-        "description": "Texto mostrado en la AppBar de la página del contador"
-    }
-}
-```
 
-[coverage_badge]: coverage_badge.svg
-[flutter_localizations_link]: https://api.flutter.dev/flutter/flutter_localizations/flutter_localizations-library.html
-[internationalization_link]: https://flutter.dev/docs/development/accessibility-and-localization/internationalization
-[license_badge]: https://img.shields.io/badge/license-MIT-blue.svg
-[license_link]: https://opensource.org/licenses/MIT
-[very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
-[very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
-[very_good_cli_link]: https://github.com/VeryGoodOpenSource/very_good_cli
-[very_good_ventures_link]: https://verygood.ventures/
-[logo]: art/header.png
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/larbiii14/Art_Puzzle.svg?style=for-the-badge
+[contributors-url]: https://github.com/larbiii14/Art_Puzzle/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/larbiii14/Art_Puzzle.svg?style=for-the-badge
+[forks-url]: https://github.com/larbiii14/Art_Puzzle/network/members
+[stars-shield]: https://img.shields.io/github/stars/larbiii14/Art_Puzzle.svg?style=for-the-badge
+[stars-url]: https://github.com/larbiii14/Art_Puzzle/stargazers
+[issues-shield]: https://img.shields.io/github/issues/larbiii14/Art_Puzzle.svg?style=for-the-badge
+[issues-url]: https://github.com/larbiii14/Art_Puzzle/issues
+[license-shield]: https://img.shields.io/github/license/larbiii14/Art_puzzle.svg?style=for-the-badge
+[license-url]: https://github.com/larbiii14/Art_Puzzle/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/l-abatorab
+[product-screenshot]: images/screenshot.png
