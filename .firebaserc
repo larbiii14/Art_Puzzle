@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "slide-puzzle-dev-34815"
-  }
+    "default": "art-puzzle-1157",
+    "staging": "art-puzzle-1157"
+  },
+  "targets": {}
 }
