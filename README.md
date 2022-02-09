@@ -67,8 +67,9 @@ A Art Puzzle built for [Flutter Challenge](https://flutterhack.devpost.com/).
 ## About The Project
 <div align="center">
   <a href="https://github.com/larbiii14/Art_Puzzle">
-    <img src="assets/images/art_puzzle_logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/images/art_puzzle_header.png" alt="Logo" width="80" height="80">
   </a>
+  <br />
 [![Product Name Screen Shot][product-screenshot]](https://art-puzzle-1157.web.app/)
 
  `larbiii14`, `Art_puzzle`, `l-abatorab`, `larbiii14@gmail.com`, `Art_puzzle`, `A flutter Art Puzzle `
