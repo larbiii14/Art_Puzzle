@@ -149,18 +149,15 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 
-<!-- CONTACT -->
 ## Contact
 
 LARBI ABATORAB - [@larbi_abatorab](https://twitter.com/larbi_abatorab) - larbiii14@gmail.com
 
 Project Link: [https://github.com/larbiii14/Art_Puzzle](https://github.com/larbiii14/Art_Puzzle)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/larbiii14/Art_Puzzle.svg?style=for-the-badge
 [contributors-url]: https://github.com/larbiii14/Art_Puzzle/graphs/contributors
