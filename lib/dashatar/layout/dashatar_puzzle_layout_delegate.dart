@@ -31,8 +31,8 @@ class DashatarPuzzleLayoutDelegate extends PuzzleLayoutDelegate {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         const ResponsiveGap(
-          small: 23,
-          medium: 32,
+          small: 5,
+          medium: 5,
         ),
         ResponsiveLayoutBuilder(
           small: (_, child) => const DashatarPuzzleActionButton(),
@@ -40,8 +40,8 @@ class DashatarPuzzleLayoutDelegate extends PuzzleLayoutDelegate {
           large: (_, __) => const SizedBox(),
         ),
         const ResponsiveGap(
-          small: 32,
-          medium: 54,
+          small: 5,
+          medium: 5,
         ),
         ResponsiveLayoutBuilder(
           small: (_, child) => const DashatarThemePicker(),
@@ -49,8 +49,8 @@ class DashatarPuzzleLayoutDelegate extends PuzzleLayoutDelegate {
           large: (_, child) => const SizedBox(),
         ),
         const ResponsiveGap(
-          small: 32,
-          medium: 54,
+          small: 5,
+          medium: 5,
         ),
         const ResponsiveGap(
           large: 130,
@@ -90,8 +90,8 @@ class DashatarPuzzleLayoutDelegate extends PuzzleLayoutDelegate {
         Column(
           children: [
             const ResponsiveGap(
-              small: 21,
-              medium: 34,
+              small: 05,
+              medium: 10,
               large: 70,
             ),
             DashatarPuzzleBoard(tiles: tiles),

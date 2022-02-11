@@ -36,8 +36,8 @@ class SimplePuzzleLayoutDelegate extends PuzzleLayoutDelegate {
     return Column(
       children: [
         const ResponsiveGap(
-          small: 32,
-          medium: 48,
+          small: 20,
+          medium: 30,
         ),
         ResponsiveLayoutBuilder(
           small: (_, child) => const SimplePuzzleShuffleButton(),
@@ -45,8 +45,8 @@ class SimplePuzzleLayoutDelegate extends PuzzleLayoutDelegate {
           large: (_, __) => const SizedBox(),
         ),
         const ResponsiveGap(
-          small: 32,
-          medium: 48,
+          small: 20,
+          medium: 30,
         ),
       ],
     );
@@ -94,8 +94,8 @@ class SimplePuzzleLayoutDelegate extends PuzzleLayoutDelegate {
     return Column(
       children: [
         const ResponsiveGap(
-          small: 32,
-          medium: 48,
+          small: 20,
+          medium: 30,
           large: 96,
         ),
         ResponsiveLayoutBuilder(
@@ -187,7 +187,7 @@ class SimpleStartSection extends StatelessWidget {
       children: [
         const ResponsiveGap(
           small: 20,
-          medium: 83,
+          medium: 60,
           large: 151,
         ),
         PuzzleName(
