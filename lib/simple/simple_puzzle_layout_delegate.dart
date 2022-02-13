@@ -186,7 +186,7 @@ class SimpleStartSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const ResponsiveGap(
-          small: 20,
+          small: 30,
           medium: 60,
           large: 151,
         ),
@@ -198,9 +198,9 @@ class SimpleStartSection extends StatelessWidget {
           status: state.puzzleStatus,
         ),
         const ResponsiveGap(
-          small: 12,
-          medium: 16,
-          large: 32,
+          small: 25,
+          medium: 40,
+          large: 50,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -254,7 +254,7 @@ class SimpleStartSection extends StatelessWidget {
         ),
         const ResponsiveGap(
           large: 32,
-          small: 16,
+          small: 25,
         ),
         ResponsiveLayoutBuilder(
           small: (_, __) => const SizedBox(),

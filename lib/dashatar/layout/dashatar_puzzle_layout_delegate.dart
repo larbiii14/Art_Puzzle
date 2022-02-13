@@ -28,11 +28,13 @@ class DashatarPuzzleLayoutDelegate extends PuzzleLayoutDelegate {
   @override
   Widget endSectionBuilder(PuzzleState state) {
     return Column(
+      mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.end,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         const ResponsiveGap(
-          small: 5,
-          medium: 5,
+          small: 08,
+          medium: 20,
         ),
         ResponsiveLayoutBuilder(
           small: (_, child) => const DashatarPuzzleActionButton(),
@@ -40,8 +42,8 @@ class DashatarPuzzleLayoutDelegate extends PuzzleLayoutDelegate {
           large: (_, __) => const SizedBox(),
         ),
         const ResponsiveGap(
-          small: 5,
-          medium: 5,
+          small: 05,
+          medium: 20,
         ),
         ResponsiveLayoutBuilder(
           small: (_, child) => const DashatarThemePicker(),
@@ -49,8 +51,8 @@ class DashatarPuzzleLayoutDelegate extends PuzzleLayoutDelegate {
           large: (_, child) => const SizedBox(),
         ),
         const ResponsiveGap(
-          small: 5,
-          medium: 5,
+          small: 05,
+          medium: 20,
         ),
         const ResponsiveGap(
           large: 130,
@@ -91,7 +93,7 @@ class DashatarPuzzleLayoutDelegate extends PuzzleLayoutDelegate {
           children: [
             const ResponsiveGap(
               small: 05,
-              medium: 10,
+              medium: 20,
               large: 70,
             ),
             DashatarPuzzleBoard(tiles: tiles),
